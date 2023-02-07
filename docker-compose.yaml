@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  pgsql-db:
+    image: 'postgres:14'
+    ports:
+        - '3333:5432'
+    environment:
+        PGPASSWORD: secret
+        POSTGRES_DB: quest
+        POSTGRES_USER: postgre
+        POSTGRES_PASSWORD: secret
+    
